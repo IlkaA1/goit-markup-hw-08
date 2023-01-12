@@ -1,9 +1,9 @@
 .header {
-  border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-  @media (max-width: 480px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+  @media (min-width: 1200px) {
+    border-bottom: 1px solid #ececec;
   }
 
   &__body {
@@ -19,19 +19,18 @@
   }
 
   &__list-nav {
-    display: flex;
+    display: none;
 
-    @media (max-width: 480px) {
-      display: none;
+    @media (min-width: 1200px) {
+      display: flex;
     }
   }
 
   &__burger-menu {
-    display: none;
+    display: block;
 
-    @media (max-width: 480px) {
-      display: block;
-      margin-top: 10px 15px 10px;
+    @media (min-width: 1200px) {
+      display: none;
     }
   }
 }
