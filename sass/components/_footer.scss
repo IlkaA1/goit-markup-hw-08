@@ -1,0 +1,38 @@
+.footer {
+  background-color: var(--heading-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__nav {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__adres {
+    color: var(--body-background-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    margin-bottom: 9px;
+  }
+}
+
+.footer__contact-details {
+  margin-right: 70px;
+}
+
+.footer__social-networks {
+  font-family: Roboto;
+  font-weight: 700;
+  color: var(--body-background-color);
+  font-size: 14px;
+  line-height: 1.14;
+
+  margin-bottom: 20px;
+}
+
+.footer__subscription {
+  margin-left: 93px;
+}
