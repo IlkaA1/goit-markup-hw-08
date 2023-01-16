@@ -6,15 +6,16 @@
   height: 100%;
   background-color: var(--body-background-color);
 
-  padding: 48px 40px;
+  padding-top: 21px;
+  padding-left:  40px;
+  padding-right: 40px;
+  padding-bottom: 48px;
 
-  //display: none;
   transform: translateX(-100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobail__menu.is-open {
-  //display: block;
   transform: translateX(0);
 }
 
@@ -26,6 +27,7 @@
   position: absolute;
   top: 21px;
   right: 25px;
+
 
   display: flex;
   align-items: center;
@@ -101,5 +103,4 @@
   text-decoration: none;
 }
 
-.line {
-}
+

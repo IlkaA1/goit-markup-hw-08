@@ -1,38 +1,123 @@
 .footer {
+    text-align: center;
   background-color: var(--heading-color);
 
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &__nav {
-    display: flex;
-    align-items: baseline;
-  }
-
   &__adres {
     color: var(--body-background-color);
     font-style: normal;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.1;
 
-    margin-bottom: 9px;
+    margin-bottom: 12px;
   }
 }
 
 .footer__contact-details {
-  margin-right: 70px;
-}
+ 
+ margin-bottom: 60px;
+ }
 
-.footer__social-networks {
-  font-family: Roboto;
-  font-weight: 700;
-  color: var(--body-background-color);
-  font-size: 14px;
-  line-height: 1.14;
+ .footer__contacts--margin {
+    margin-bottom: 12px;
+  }
 
+ .footer__contacts {
+
+    color: var(--foter-adres-color);
+    font-size: 14px;
+    line-height: 1.1;
+    font-style: normal;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
+  .footer__social{
+    margin-bottom: 60px;
+  }
+
+  .footer__social-networks {
+   font-family: Roboto;
+   font-weight: 700;
+   color: var(--body-background-color);
+   font-size: 14px;
+   line-height: 1.1;
+ 
+   margin-bottom: 20px;
+ }
+
+
+.footer__form-email {
+  width: 450px;
+  height: 50px;
+  padding: 16px 15px;
   margin-bottom: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: var(--heading-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__subscription {
-  margin-left: 93px;
+
+.footer__form-email:focus-within {
+  border: 1px solid var(--accent-color);
 }
+
+
+ 
+
+// .footer {
+//   background-color: var(--heading-color);
+// 
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// 
+//   &__nav {
+//     display: flex;
+//     align-items: baseline;
+//   }
+// 
+//   &__adres {
+//     color: var(--body-background-color);
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.71;
+// 
+//     margin-bottom: 9px;
+//   }
+// }
+// 
+// .footer__contact-details {
+//   margin-right: 70px;
+// }
+// 
+// .footer__social-networks {
+//   font-family: Roboto;
+//   font-weight: 700;
+//   color: var(--body-background-color);
+//   font-size: 14px;
+//   line-height: 1.14;
+// 
+//   margin-bottom: 20px;
+// }
+// 
+// .footer__subscription {
+//   margin-left: 93px;
+// }
