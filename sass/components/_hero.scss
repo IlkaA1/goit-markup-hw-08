@@ -1,17 +1,24 @@
 .hero {
-      background-color: #c4c4c4;
-      text-align: center;
-      padding: 200px 0;
-      min-width: 480px;
-      
-    
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/fon.jpg);
-      width: 100%;
+     background-color: #c4c4c4;
+     text-align: center;
+     padding: 118px 0;
+     min-width: 480px;
+     
+     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+       url(../images/header.jpg);
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     background-size: cover;
 
-    
-      margin-left: auto;
-      margin-right: auto;
+     @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .box {
+    background-image: url('../images/header@2x.jpg');
+  }
+}
 
       &__text {
            color: var(--body-background-color);
