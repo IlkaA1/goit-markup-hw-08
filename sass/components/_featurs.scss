@@ -1,5 +1,5 @@
 .featurs {
-    padding-top: 60px;
+   padding-top: 60px;
    padding-bottom: 60px;
    min-width: 480px;
   
@@ -22,63 +22,68 @@
   
     margin-bottom: 10px;
     margin-top: 30px;
-    text-align: center;
+   @media (max-width: 767px){
+      text-align: center;
+    }
   }
 
   &__groups-text {
     color: var(--title-text-color);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-  
+
+    @media (max-width: 767px){
+      font-weight: 400;
+    }
+  }
+  @media (max-width: 767px){
+    .featurs__list:not(:last-child) {
+      margin-bottom: 30px;
+     }
+  }}
+
+  /*Планшет стилі*/
+  @media (min-width: 768px) and (max-width: 1199px){
+    .featurs-menu{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    .featurs__groups-icon{
+      width: 354px;
+    }
+    .featurs__list{
+      width: 50%;
+      flex-basis: calc((100% - 30px)/2);
+    }}
+
+  /*Десктопні стилі*/
+  @media (min-width: 1200px){
+ 
+  .featurs {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  min-width: 1200px;
+
+  &-menu{
+    display: flex;
+    width: 1170px;
   }
 
-  .featurs__list:not(:last-child) {
-    margin-bottom: 30px;
-   }
+  &__groups-icon {
+  width: 270px;
+  //height: 120px;
+}
+ 
+  &__groups-text {
+  margin-right: 30px;
+ }
+ &__list:not(:last-child) {
+  margin-right: 30px;
+}
+}}
 
-  }
-  
 
 
 
-// .featurs {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
 
-// &__list {
-//   display: flex;
-//   width: 1170px;
-// }
-// 
-  // &__groups-icon {
-  //   background-color: var(--featurs-bacgraund-color);
-  //   width: 270px;
-  //   height: 120px;
-// 
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-
-// &__groups-title {
-//   color: var(--featurs-title-color);
-//   font-size: 14px;
-//   line-height: 1.4;
-//   text-transform: uppercase;
-// 
-//   margin-bottom: 10px;
-//   margin-top: 30px;
-// }
-// &__groups-text {
-//   color: var(--title-text-color);
-//   font-size: 14px;
-//   line-height: 1.7;
-// 
-//   margin-right: 30px;
-// }
-// 
-
-// .featurs__list:not(:last-child) {
-//   margin-right: 30px;
-// }

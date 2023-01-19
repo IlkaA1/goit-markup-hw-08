@@ -1,69 +1,83 @@
 .hero {
-     background-color: #c4c4c4;
-     text-align: center;
-     padding: 118px 0;
-     min-width: 480px;
-     
-     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-       url(../images/header.jpg);
-     width: 100%;
-     margin-left: auto;
-     margin-right: auto;
-     background-size: cover;
+  padding: 118px 0;
+  min-width: 480px;
+  min-height: 400px;
+  background-color: #c4c4c4;
+  text-align: center;
+  
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/header.jpg);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;}
 
-     @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .box {
+  .hero {
     background-image: url('../images/header@2x.jpg');
-  }
-}
+  }}
 
-      &__text {
-           color: var(--body-background-color);
-           font-weight: 900;
-           font-size: 26px;
-           line-height: 1.6;
-           text-align: center;
-           letter-spacing: 0.06em;
-           text-transform: uppercase;
+  .hero__text {
+  color: var(--body-background-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
         
-           margin-bottom: 30px;
-         }
+  margin-bottom: 30px;
+  
+        
+
+    /*Планшет стилі*/
+    @media (min-width: 768px){
+      .hero {
+        min-width: 768px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet.jpg);}
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+          background-image: url('../images/tablet@2x.jpg');
+        }
+      }
     }
 
+    /*Десктопні стилі*/
+   @media (min-width: 1200px) {
+    .hero {
+        min-width: 1200px;
+        padding: 200px 0px;
+        min-height: 600px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/fon.jpg);
 
 
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+          background-image: url('../images/fon@2x.jpg');
+        }
+      }
 
-
-
-
-
-
-// .hero {
-//   background-color: #c4c4c4;
-//   text-align: center;
-//   padding: 200px;
-// 
-//   max-width: 1600px;
-//   min-height: 600px;
-//   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//     url(../images/fon.jpg);
-//   width: 100%;
-// 
-//   margin-left: auto;
-//   margin-right: auto;
-// 
-//  &__text {
-//    color: var(--body-background-color);
-//    font-weight: 900;
-//    font-size: 44px;
-//    line-height: 1.36;
-//    text-align: center;
-//    letter-spacing: 0.06em;
-//    text-transform: uppercase;
-// 
-//    margin-bottom: 30px;
-//  }
-// }
+     &__text {
+      color: var(--body-background-color);
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+   
+      margin-bottom: 30px;
+    }
+  }}
+    

@@ -22,7 +22,7 @@
 
   margin-top: 0;
   margin-bottom: 0px;
-  padding-bottom: px;
+ 
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -55,68 +55,69 @@ width: 450px;
   margin-top: 10px;
 }
 
-@media (max-width: 767px){
+@media (max-width: 1199px){
   .comanda__worker-list li:not(:last-child){
   margin-bottom: 30px;
 }}
 
+/*Планшет стилі*/
+@media (min-width: 768px) and (max-width: 1199px){
+  .comanda {
+    
+  
+    &__title {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }}
+    
+   .comanda__worker-list {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 30px;
+   }
+   
+   .comanda__list-content {
+    width: 354px;
+    }
+  
+    .comanda__list-img{
+      width: 354px;
+    }
+   
+    .comanda__worker-information {
+     padding-bottom: 30px;
+   }
+}
 
+  /*Десктопні стилі*/
+@media (min-width: 1200px){
 
-// .comanda {
-//   background-color: var(--heading-background-color);
-// 
-//   margin-top: 0%;
-//   margin-bottom: 0%;
-// 
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// 
-//   &__title {
-//     color: var(--featurs-title-color);
-//     font-size: 36px;
-//     line-height: 1.16;
-//     text-align: center;
-// 
-//     margin-top: 0%;
-//     margin-bottom: 50px;
-//   }
-// }
-// 
-// .comanda__worker-list {
-//   display: flex;
-//   justify-content: space-between;
-// }
-// 
-// .comanda__list-content {
-//   background-color: var(--body-background-color);
-// 
-//   margin-top: 0;
-//   margin-bottom: 0px;
-//   padding-bottom: 30px;
-// 
-//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//     0px 2px 1px rgba(0, 0, 0, 0.2);
-//   border-radius: 0px 0px 4px 4px;
-// }
-// 
-// .comanda__worker-information {
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-// }
-// 
-// .comanda__worker-name {
-//   color: var(--featurs-title-color);
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.18;
-//   text-align: center;
-// }
-// 
-// .comanda__worker-position {
-//   color: var(--title-text-color);
-//   font-size: 16px;
-//   line-height: 1.18;
-//   text-align: center;
-// 
-//   margin-top: 10px;
-// }
+ .comanda {
+  margin-top: 0%;
+  margin-bottom: 0%;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }}
+  
+ .comanda__worker-list {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .comanda__list-content {
+  padding-bottom: 30px;
+  }
+
+  .comanda__list-img{
+    width: 270px;
+  }
+ 
+  .comanda__worker-information {
+   padding-bottom: 30px;
+ }
+}
