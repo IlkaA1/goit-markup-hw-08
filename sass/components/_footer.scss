@@ -90,11 +90,12 @@
   &__nav {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
    }
  }
   .footer__contact-details {
     display: inline-block;
-    margin-left: 76px;
     margin-right: 165px;
     text-align: center;
 }
@@ -102,11 +103,9 @@
 .footer__social{
   display: inline-block;
   text-align: center;
-  margin-bottom: 60px;
 }
 .footer__subscription {
   text-align: center;
-  margin-left: 159px;
 }
 }
 
