@@ -1,6 +1,6 @@
 .hero {
   padding: 118px 0;
-  min-width: 480px;
+  //min-width: 480px;
   min-height: 400px;
   background-color: #c4c4c4;
   text-align: center;
@@ -17,7 +17,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url('../images/header@2x.jpg');
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/header@2x.jpg');
   }}
 
   .hero__text {
@@ -44,7 +44,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .hero {
-          background-image: url('../images/tablet@2x.jpg');
+          background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/tablet@2x.jpg');
         }
       }
     }
@@ -63,7 +63,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .hero {
-          background-image: url('../images/fon@2x.jpg');
+          background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/fon@2x.jpg');
         }}
 
         .hero__text {

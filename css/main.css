@@ -137,7 +137,6 @@ img {
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
-    min-width: 480px;
   }
 }
 .header__body {
@@ -312,7 +311,6 @@ img {
 
 .hero {
   padding: 118px 0;
-  min-width: 480px;
   min-height: 400px;
   background-color: #c4c4c4;
   text-align: center;
@@ -326,7 +324,8 @@ img {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/header@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header@2x.jpg");
   }
 }
 .hero__text {
@@ -350,7 +349,8 @@ img {
 }
 @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/tablet@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet@2x.jpg");
   }
 }
 /*Десктопні стилі*/
@@ -365,7 +365,8 @@ img {
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/fon@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/fon@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon@2x.jpg");
   }
 }
 @media (min-width: 1200px) {
@@ -712,11 +713,9 @@ img {
 .featurs {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
 }
 .featurs__groups-icon {
   background-color: var(--featurs-bacgraund-color);
-  width: 450px;
   height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -864,7 +863,6 @@ img {
   background-color: var(--heading-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
 }
 .comanda__title {
   color: var(--featurs-title-color);
@@ -1026,7 +1024,6 @@ img {
 .customers {
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
 }
 .customers__title {
   font-family: Roboto;
@@ -1113,7 +1110,6 @@ img {
   background-color: var(--heading-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
 }
 @media (max-width: 767px) {
   .footer {
@@ -1163,7 +1159,6 @@ img {
 }
 
 .footer__form-email {
-  width: 450px;
   height: 50px;
   padding: 16px 15px;
   margin-bottom: 20px;
@@ -1396,7 +1391,6 @@ img {
     -webkit-column-gap: 8px;
        -moz-column-gap: 8px;
             column-gap: 8px;
-    width: 320px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
