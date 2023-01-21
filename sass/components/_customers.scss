@@ -23,7 +23,6 @@
 
 .customers__list-client{
   @media (max-width: 767px){
-    width: 50%;
     flex-basis: calc((100% - 30px) / 2);
   }
 }
