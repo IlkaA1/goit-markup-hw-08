@@ -111,10 +111,11 @@ width: 450px;
  
  .comanda__list-content {
   padding-bottom: 30px;
+  width: 270px;
   }
 
   .comanda__list-img{
-    width: 270px;
+    max-width: 270px;
   }
  
   .comanda__worker-information {
