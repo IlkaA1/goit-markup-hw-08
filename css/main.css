@@ -542,7 +542,7 @@ img {
   }
 }
 .form {
-  width: 370px;
+  max-width: 370px;
 }
 
 .form__filed {
@@ -598,7 +598,7 @@ img {
 }
 
 .form__comment {
-  width: 370px;
+  max-width: 370px;
   height: 120px;
   padding: 11px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -703,10 +703,10 @@ img {
 /*Десктопні стилі*/
 @media (min-width: 1200px) {
   .form {
-    width: 448px;
+    max-width: 448px;
   }
   .form__comment {
-    width: 448px;
+    max-width: 448px;
   }
   .form__accept {
     font-size: 14px;
